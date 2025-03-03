@@ -6,6 +6,7 @@ some ais first:
 #3: ChatGPT: https://chatgpt.com
 #4: Conch AI: https://www.getconch.ai/
 #5: SealthGPT: https://www.stealthgpt.ai/
+#6: WriteSonic: https://writesonic.com/
 Ai bypassers:
 Spinbot: https://spinbot.com/
 quillbot: https://quillbot.com/paraphrasing-tool
@@ -14,6 +15,9 @@ uPassAI: https://upass.ai/
 Conch AI: https://www.getconch.ai/
 Undetectable AI: https://undetectable.ai/detector-humanizer
 TwainGPT: https://app.twaingpt.com/dashboard
+Surferseo: https://surferseo.com/ai-humanizer/
+writehuman: https://writehuman.ai/
+writesonic: https://writesonic.com/
 Wordrefrence (manually changing words): https://www.wordreference.com/synonyms/wordhere
 Hix: https://bypass.hix.ai/
 SealthGPT: https://www.stealthgpt.ai/
@@ -29,3 +33,4 @@ AI detectors ( ALWAYS CHECK BEFORE SUBMITTING OR WTV)
 #1: ZeroGPT: https://www.zerogpt.com/
 #2: GPTZero: https://www.gptzero.com/
 #3: CopyLeaks: https://copyleaks.com/ai-content-detector
+#4 Originality.ai: https://originality.ai/
