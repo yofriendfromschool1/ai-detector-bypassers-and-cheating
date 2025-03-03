@@ -34,3 +34,4 @@ AI detectors ( ALWAYS CHECK BEFORE SUBMITTING OR WTV)
 #2: GPTZero: https://www.gptzero.com/
 #3: CopyLeaks: https://copyleaks.com/ai-content-detector
 #4 Originality.ai: https://originality.ai/
+#5: Sapling.ai: https://sapling.ai/ai-content-detector
