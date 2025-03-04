@@ -31,7 +31,21 @@ ai text converter: https://aitextconverter.com/
 bypassgpt: https://bypassgpt.co/features/chatgpt-humanizer
 AI detectors ( ALWAYS CHECK BEFORE SUBMITTING OR WTV)
 #1: ZeroGPT: https://www.zerogpt.com/
-#2: GPTZero: https://www.gptzero.com/
+#2: GPTZero: https://www.gptzero.me/
 #3: CopyLeaks: https://copyleaks.com/ai-content-detector
 #4 Originality.ai: https://originality.ai/
 #5: Sapling.ai: https://sapling.ai/ai-content-detector
+
+Cheating stuff:
+answersai: https://answersai.com/ Extension: https://chromewebstore.google.com/detail/answersai/kmdgaoalcjcefbgaiookdaigjeepoldf?hl=en App: 
+ apple: https://apps.apple.com/us/app/answersai-snap-solve/id6459510321 android: https://play.google.com/store/apps/details?id=com.answersai.app&hl=en_US&pli=1
+Anwseraipro: https://answerai.pro/ Extension: https://answerai.pro/ext app: Apple: https://apps.apple.com/us/app/answer-ai-your-ai-tutor/id6446047896 android: https://play.google.com/store/apps/details?id=com.cyberdavinci.gptkeyboard
+Monica: https://monica.im/home everything: https://monica.im/download
+SchoolCheats: https://schoolcheats.net/ https://github.com/schoolcheats https://chromewebstore.google.com/detail/school-cheats/dcecjjjnjecoiehclollekjmfgblkkha?hl=en
+Guath: https://www.gauthmath.com/
+photomath: https://photomath.com/
+Mathway: https://www.mathway.com/
+
+LET ME KNOW IF YOU HAVE ANYTHING ELSE THATS NOT ON HERE PUT IN ISSUES AND I WILL ADD AND APPROVE OF IT
+
+
