@@ -7,6 +7,8 @@ some ais first:
 #4: Conch AI: https://www.getconch.ai/
 #5: SealthGPT: https://www.stealthgpt.ai/
 #6: WriteSonic: https://writesonic.com/
+#7: SlidesGPT: https://slidesgpt.com/
+#8: Presentations.ai: https://www.presentations.ai/
 Ai bypassers:
 Spinbot: https://spinbot.com/
 quillbot: https://quillbot.com/paraphrasing-tool
