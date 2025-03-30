@@ -2,13 +2,17 @@
 bypass ai decectors
 some ais first:
 #1: Gemini by google: https://gemini.google.com/
-#2 DeepSeek: https://chat.deepseek.com
+#2: DeepSeek: https://chat.deepseek.com
 #3: ChatGPT: https://chatgpt.com
-#4: Conch AI: https://www.getconch.ai/
-#5: SealthGPT: https://www.stealthgpt.ai/
-#6: WriteSonic: https://writesonic.com/
-#7: SlidesGPT: https://slidesgpt.com/
-#8: Presentations.ai: https://www.presentations.ai/
+#4: Perplexity.ai: https://www.perplexity.ai/
+#5: Conch AI: https://www.getconch.ai/
+#6: SealthGPT: https://www.stealthgpt.ai/
+#7: WriteSonic: https://writesonic.com/
+#8: SlidesGPT: https://slidesgpt.com/
+#9: Presentations.ai: https://www.presentations.ai/
+#10: StudyFetch: https://www.studyfetch.com
+#11: Copilot: https://copilot.microsoft.com/
+#12: Ai Thor: https://aithor.com/ https://aithor.io/
 Ai bypassers:
 Spinbot: https://spinbot.com/
 quillbot: https://quillbot.com/paraphrasing-tool
@@ -17,6 +21,7 @@ uPassAI: https://upass.ai/
 Conch AI: https://www.getconch.ai/
 Undetectable AI: https://undetectable.ai/detector-humanizer
 TwainGPT: https://app.twaingpt.com/dashboard
+Grubby.AI: https://grubby.ai/dashboard/humanizer
 Surferseo: https://surferseo.com/ai-humanizer/
 writehuman: https://writehuman.ai/
 writesonic: https://writesonic.com/
