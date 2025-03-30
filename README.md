@@ -43,6 +43,10 @@ AI detectors ( ALWAYS CHECK BEFORE SUBMITTING OR WTV)
 #4 Originality.ai: https://originality.ai/
 #5: Sapling.ai: https://sapling.ai/ai-content-detector
 
+Grade your self:
+Cograder: https://v2.cograder.com/app
+EssayGrader: https://app.essaygrader.ai/
+
 Cheating stuff:
 answersai: https://answersai.com/ Extension: https://chromewebstore.google.com/detail/answersai/kmdgaoalcjcefbgaiookdaigjeepoldf?hl=en App: 
  apple: https://apps.apple.com/us/app/answersai-snap-solve/id6459510321 android: https://play.google.com/store/apps/details?id=com.answersai.app&hl=en_US&pli=1
