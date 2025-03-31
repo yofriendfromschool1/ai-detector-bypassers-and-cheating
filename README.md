@@ -13,6 +13,7 @@ some ais first:
 #10: StudyFetch: https://www.studyfetch.com
 #11: Copilot: https://copilot.microsoft.com/
 #12: Ai Thor: https://aithor.com/ https://aithor.io/
+#13: PentestGPT: https://pentestgpt.ai
 Ai bypassers:
 Spinbot: https://spinbot.com/
 quillbot: https://quillbot.com/paraphrasing-tool
