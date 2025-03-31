@@ -1,6 +1,7 @@
 # ai-detector-bypassers
 bypass ai decectors
 some ais first:
+kinda op if u put ur school and yall know eachother and flash cards: Gizmo ai: https://gizmo.ai/
 #1: Gemini by google: https://gemini.google.com/
 #2: DeepSeek: https://chat.deepseek.com
 #3: ChatGPT: https://chatgpt.com
