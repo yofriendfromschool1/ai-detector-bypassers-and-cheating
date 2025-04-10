@@ -17,6 +17,7 @@ kinda op if u put ur school and yall know eachother and flash cards: Gizmo ai: h
 #13: PentestGPT: https://pentestgpt.ai
 #14: Grok: https://grok.com/
 #15: Meta: https://www.meta.ai/
+#16: Claude: https://claude.ai/
 Ai bypassers:
 Spinbot: https://spinbot.com/
 quillbot: https://quillbot.com/paraphrasing-tool
