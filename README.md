@@ -18,6 +18,7 @@ kinda op if u put ur school and yall know eachother and flash cards: Gizmo ai: h
 #14: Grok: https://grok.com/
 #15: Meta: https://www.meta.ai/
 #16: Claude: https://claude.ai/
+#17: Essaywriter editpad: https://www.editpad.org/tool/ai-essay-writer
 Ai bypassers:
 Spinbot: https://spinbot.com/
 quillbot: https://quillbot.com/paraphrasing-tool
