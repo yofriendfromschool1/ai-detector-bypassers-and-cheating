@@ -63,6 +63,11 @@ Guath: https://www.gauthmath.com/
 photomath: https://photomath.com/
 Mathway: https://www.mathway.com/
 
-LET ME KNOW IF YOU HAVE ANYTHING ELSE THATS NOT ON HERE PUT IN ISSUES AND I WILL ADD AND APPROVE OF IT
+Prompts:
+Prompt 1: Write like Hemingway
+Prompt 2: use uncommon verbs
+Prompt 3: write in a human, conversational style, write as if you were the author Arthur C. Clarke, don't use unnecessary words and phrases.
+
+LET ME KNOW IF YOU HAVE ANYTHING ELSE THATS NOT ON HERE PUT IN ISSUES AND I WILL ADD AND APPROVE OF IT ALSO ALWAYS CHECK FOR AI DONT JUST ASSUME
 
 
