@@ -69,6 +69,8 @@ Prompt 2: use uncommon verbs
 Prompt 3: write in a human, conversational style, write as if you were the author Arthur C. Clarke, don't use unnecessary words and phrases.
 Prompt 4 (fill with your own info): https://docs.google.com/document/d/1vQoB-AKcVbVZxNyIXAcWnCCZ9dwlSsktnqCLkIJF0hw/edit?pli=1&tab=t.0
 Prompt 5 ( fill with own info): https://docs.google.com/document/d/1i60bsqZ8TtW-smdWR58cFy1hX_C4pq-Idqou0BNQHEk/edit?tab=t.0
+Prompt 6: write like Shakespeare
+prompt 7: write like (any good writer or human)
 
 LET ME KNOW IF YOU HAVE ANYTHING ELSE THATS NOT ON HERE PUT IN ISSUES AND I WILL ADD AND APPROVE OF IT ALSO ALWAYS CHECK FOR AI DONT JUST ASSUME
 
