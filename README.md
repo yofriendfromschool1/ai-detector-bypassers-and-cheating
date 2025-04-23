@@ -21,6 +21,10 @@ kinda op if u put ur school and yall know eachother and flash cards: Gizmo ai: h
 #17: Essaywriter editpad: https://www.editpad.org/tool/ai-essay-writer
 #18: AI voice cloner Kwicut: https://www.media.io/studio/shortcut/voice_clone?lang=en
 #19: Speechify: https://speechify.com/
+#20: ElevenLabs: https://elevenlabs.io
+#21: Descript: https://web.descript.com/
+#22: Genny Lovo AI: https://genny.lovo.ai/
+#23: 
 Ai bypassers:
 Spinbot: https://spinbot.com/
 quillbot: https://quillbot.com/paraphrasing-tool
