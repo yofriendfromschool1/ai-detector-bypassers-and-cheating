@@ -24,7 +24,6 @@ kinda op if u put ur school and yall know eachother and flash cards: Gizmo ai: h
 #20: ElevenLabs: https://elevenlabs.io
 #21: Descript: https://web.descript.com/
 #22: Genny Lovo AI: https://genny.lovo.ai/
-#23: 
 Ai bypassers:
 Spinbot: https://spinbot.com/
 quillbot: https://quillbot.com/paraphrasing-tool
