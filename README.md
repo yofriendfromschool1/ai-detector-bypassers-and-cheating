@@ -24,6 +24,9 @@ kinda op if u put ur school and yall know eachother and flash cards: Gizmo ai: h
 #20: ElevenLabs: https://elevenlabs.io
 #21: Descript: https://web.descript.com/
 #22: Genny Lovo AI: https://genny.lovo.ai/
+#23: Zyphra/Zonos: https://playground.zyphra.com/chat https://github.com/Zyphra/Zonos
+#24: Real-Time-Voice-Cloning: https://github.com/CorentinJ/Real-Time-Voice-Cloning
+#25: Open-Voice: https://github.com/myshell-ai/OpenVoice
 Ai bypassers:
 Spinbot: https://spinbot.com/
 quillbot: https://quillbot.com/paraphrasing-tool
