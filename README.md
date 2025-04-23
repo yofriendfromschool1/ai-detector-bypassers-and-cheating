@@ -19,6 +19,7 @@ kinda op if u put ur school and yall know eachother and flash cards: Gizmo ai: h
 #15: Meta: https://www.meta.ai/
 #16: Claude: https://claude.ai/
 #17: Essaywriter editpad: https://www.editpad.org/tool/ai-essay-writer
+#18: AI voice cloner Kwicut: https://www.media.io/studio/shortcut/voice_clone?lang=en
 Ai bypassers:
 Spinbot: https://spinbot.com/
 quillbot: https://quillbot.com/paraphrasing-tool
