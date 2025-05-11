@@ -41,6 +41,7 @@ writehuman: https://writehuman.ai/
 writesonic: https://writesonic.com/
 Wordrefrence (manually changing words): https://www.wordreference.com/synonyms/wordhere
 thesaurus (manually changing words): https://www.thesaurus.com/browse/wordhere
+Hemingway editor (manually changing words): https://hemingwayapp.com/
 Hix: https://bypass.hix.ai/
 SealthGPT: https://www.stealthgpt.ai/
 HumanizeAIPro: https://www.humanizeai.pro/
