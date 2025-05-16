@@ -29,6 +29,7 @@ kinda op if u put ur school and yall know eachother and flash cards: Gizmo ai: h
 #25: Open-Voice: https://github.com/myshell-ai/OpenVoice
 Ai bypassers:
 Spinbot: https://spinbot.com/
+Humbot: https://humbot.ai/
 quillbot: https://quillbot.com/paraphrasing-tool
 Semihuman: https://www.semihuman.ai/
 uPassAI: https://upass.ai/
@@ -59,7 +60,7 @@ AI detectors ( ALWAYS CHECK BEFORE SUBMITTING OR WTV)
 #4 Originality.ai: https://originality.ai/
 #5: Sapling.ai: https://sapling.ai/ai-content-detector
 
-Grade your self:
+Grade yourself:
 Cograder: https://v2.cograder.com/app
 EssayGrader: https://app.essaygrader.ai/
 
@@ -81,7 +82,20 @@ Prompt 4 (fill with your own info): https://docs.google.com/document/d/1vQoB-AKc
 Prompt 5 ( fill with own info): https://docs.google.com/document/d/1i60bsqZ8TtW-smdWR58cFy1hX_C4pq-Idqou0BNQHEk/edit?tab=t.0
 Prompt 6: write like Shakespeare
 prompt 7: write like (any good writer or human)
+prompt 8: use high burstiness and high perplexity.
+prompt 9: use high burstiness and high perplexity, write more human-like, don't use unnecessary words and phrases, don't do wording/any big words that only an person in college or writer would know, can use professional writers like Mark Twain, Hemingway, and Shakespeare or anymore writers as an example, and make it have 0% in AI detectors. (use with claude or chatgpt for best results.)
 
 LET ME KNOW IF YOU HAVE ANYTHING ELSE THATS NOT ON HERE PUT IN ISSUES AND I WILL ADD AND APPROVE OF IT ALSO ALWAYS CHECK FOR AI DONT JUST ASSUME
+Always use ai detectors before btw.
+
+Best (in my opinion/researched)
+AI Detectors:
+ Paid: Originality.ai, Copyleaks, Turnitin AI (bad reviews tbh not rlly recommended btw js put here), Winston AI, GPTZero
+ Free: ZeroGPT, GPTZero, Sapling.ai
+AI:
+ Paid/Free: Claude (most human sounding),X/Twitter/Grok ai(sounds more like the current generation/gen z), Gemini (Googles ai best research/med), ChatGPT (idk everything ig)
+AI Bypassers/Humanizers:
+Paid: TwainGPT, Humbot, BypassGPT
+Free: Humbot, Hix.ai, Rephrasy, UnAIMyText, BypassGPT, make ai use your old writing so send it and train it on your writing the more you give of your writing the better, or could be the 0% or lowest percent ai detected written content you have as well.
 
 
