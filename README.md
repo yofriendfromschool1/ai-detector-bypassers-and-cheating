@@ -99,3 +99,5 @@ Paid: TwainGPT, Humbot, BypassGPT
 Free: Humbot, Hix.ai, Rephrasy, UnAIMyText, BypassGPT, make ai use your old writing so send it and train it on your writing the more you give of your writing the better, or could be the 0% or lowest percent ai detected written content you have as well.
 
 
+What I personally do, if its a research assignment use Gemini Deep Search then copy that text put into claude have it rewrite it using prompt 9 then you could get it to rewrite it again using the same prompt, than use twaingpt with English (US) and basic level twice and it should be 0% to really check I use originality.ai, ZeroGPT, GPTZero, and sapling.ai.
+
