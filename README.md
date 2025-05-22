@@ -29,6 +29,8 @@ kinda op if u put ur school and yall know eachother and flash cards: Gizmo ai: h
 #25: Open-Voice: https://github.com/myshell-ai/OpenVoice
 Ai bypassers:
 Undetectable.aipro: https://www.undetectableai.pro/
+GPTinf: https://app.gptinf.com/
+Cognibypass: https://cognibypass.com/bypass
 Spinbot: https://spinbot.com/
 Humbot: https://humbot.ai/
 quillbot: https://quillbot.com/paraphrasing-tool
@@ -96,8 +98,8 @@ AI Detectors:
 AI:
  Paid/Free: Claude (most human sounding),X/Twitter/Grok ai(sounds more like the current generation/gen z), Gemini (Googles ai best research/med), ChatGPT (idk everything ig)
 AI Bypassers/Humanizers:
-Paid: TwainGPT, Humbot, BypassGPT
-Free: Humbot, Hix.ai, Rephrasy, UnAIMyText, BypassGPT, make ai use your old writing so send it and train it on your writing the more you give of your writing the better, or could be the 0% or lowest percent ai detected written content you have as well.
+Paid: TwainGPT, Cognibypass,  Humbot, BypassGPT
+Free: Humbot, Hix.ai, Rephrasy, UnAIMyText, GPTInf, BypassGPT, make ai use your old writing so send it and train it on your writing the more you give of your writing the better, or could be the 0% or lowest percent ai detected written content you have as well.
 
 NOTE: if an AI bypasser doesn't work try using it over and over again like copy the still ai detected text but put it back into the ai bypasser and regenerate again and keep doing it until you get 0% should work with almost all ai bypasses (only tried with undetectable.aipro btw but should work with most if not all)
 
