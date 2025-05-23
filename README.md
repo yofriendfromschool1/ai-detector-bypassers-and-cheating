@@ -27,6 +27,10 @@ kinda op if u put ur school and yall know eachother and flash cards: Gizmo ai: h
 #23: Zyphra/Zonos: https://playground.zyphra.com/chat https://github.com/Zyphra/Zonos
 #24: Real-Time-Voice-Cloning: https://github.com/CorentinJ/Real-Time-Voice-Cloning
 #25: Open-Voice: https://github.com/myshell-ai/OpenVoice
+#26: AI Tutor Pro: https://www.aitutorpro.ca/
+#27: Consensus: https://consensus.app/search/
+#28: Elicit: https://elicit.com/
+#29: Youlearn: https://app.youlearn.ai/
 Ai bypassers:
 Undetectable.aipro: https://www.undetectableai.pro/
 GPTinf: https://app.gptinf.com/
@@ -105,3 +109,12 @@ NOTE: if an AI bypasser doesn't work try using it over and over again like copy 
 
 What I personally do, if its a research assignment use Gemini Deep Search then copy that text put into claude have it rewrite it using prompt 9 then you could get it to rewrite it again using the same prompt, than use twaingpt with English (US) and basic level twice and it should be 0% to really check I use originality.ai, ZeroGPT, GPTZero, and sapling.ai.
 
+NOTEEEEEEEEEEEE:
+if what you are looking for is paid but, your a college student or student with an student email address that ends in .edu then, these have discounts:
+
+
+#1: Gemini, 15 months free as of may 22 2025
+#2: X/Grok, a month or so free as long as you sign up with the .edu email as of may 22 2025 but believed to last until the end of this year or forever.
+#3: ChatGPT: 2 months free until end of may 2025
+there might be more lmk if there is
+also discord: https://discord.gg/8mtJc3w4DT
