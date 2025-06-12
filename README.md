@@ -2,6 +2,7 @@
 bypass ai decectors
 some ais first:
 kinda op if u put ur school and yall know eachother and flash cards: Gizmo ai: https://gizmo.ai/
+lowkey fw it: https://lmarena.ai/?mode=side-by-side (2 models at once to see which is better and it allows paid models too, and you can vote which one is better to help the community.)
 #1: Gemini by google: https://gemini.google.com/
 #2: DeepSeek: https://chat.deepseek.com
 #3: ChatGPT: https://chatgpt.com
@@ -112,6 +113,11 @@ What I personally do, if its a research assignment use Gemini Deep Search then c
 NOTEEEEEEEEEEEE:
 if what you are looking for is paid but, your a college student or student with an student email address that ends in .edu then, these have discounts:
 
+
+MORE INFO:
+https://lmarena.ai/leaderboard
+https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard
+https://llmarena.ai/
 
 #1: Gemini, 15 months free as of may 22 2025
 #2: X/Grok, a month or so free as long as you sign up with the .edu email as of may 22 2025 but believed to last until the end of this year or forever.
