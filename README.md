@@ -72,6 +72,11 @@ Uncensored ai:
 https://venice.ai/chat
 https://cleus.ai/chat
 https://lmstudio.ai/ (only available for windows/mac/linux) (search uncensored)
+jailbreak prompts:
+https://www.reddit.com/r/ChatGPTJailbreak/comments/1law92b/jailbreak_for_ai/
+https://www.reddit.com/r/ChatGPTJailbreak/comments/1li4pdj/jailbreak_cici_meta_ai_that_bypasses_filters_for/
+https://github.com/l0gicx/ai-model-bypass
+https://www.reddit.com/r/ChatGPTJailbreak/comments/1kky3ym/the_true_way_to_jailbrake_any_ai/
 
 Grade yourself:
 Cograder: https://v2.cograder.com/app
