@@ -68,6 +68,11 @@ AI detectors ( ALWAYS CHECK BEFORE SUBMITTING OR WTV)
 #4 Originality.ai: https://originality.ai/
 #5: Sapling.ai: https://sapling.ai/ai-content-detector
 
+Uncensored ai:
+https://venice.ai/chat
+https://cleus.ai/chat
+https://lmstudio.ai/ (only available for windows/mac/linux)
+
 Grade yourself:
 Cograder: https://v2.cograder.com/app
 EssayGrader: https://app.essaygrader.ai/
