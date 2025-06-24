@@ -71,7 +71,7 @@ AI detectors ( ALWAYS CHECK BEFORE SUBMITTING OR WTV)
 Uncensored ai:
 https://venice.ai/chat
 https://cleus.ai/chat
-https://lmstudio.ai/ (only available for windows/mac/linux)
+https://lmstudio.ai/ (only available for windows/mac/linux) (search uncensored)
 
 Grade yourself:
 Cograder: https://v2.cograder.com/app
