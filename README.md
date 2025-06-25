@@ -78,6 +78,7 @@ https://www.reddit.com/r/ChatGPTJailbreak/comments/1li4pdj/jailbreak_cici_meta_a
 https://github.com/l0gicx/ai-model-bypass
 https://www.reddit.com/r/ChatGPTJailbreak/comments/1l56aus/updated_llm_jailbreaking_guide/
 https://www.reddit.com/r/ChatGPTJailbreak/comments/1kky3ym/the_true_way_to_jailbrake_any_ai/
+https://jailbreakprompts.cc/
 
 Grade yourself:
 Cograder: https://v2.cograder.com/app
