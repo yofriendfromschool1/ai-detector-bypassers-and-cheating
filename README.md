@@ -32,6 +32,13 @@ lowkey fw it: https://lmarena.ai/?mode=side-by-side (2 models at once to see whi
 #27: Consensus: https://consensus.app/search/
 #28: Elicit: https://elicit.com/
 #29: Youlearn: https://app.youlearn.ai/
+Accesories (glasses or wtv):
+Meta AI Glasses: https://www.meta.com/ai-glasses/ (mod for almost any ai: https://github.com/jovanovski/meta-glasses-gpt https://grok.com/share/c2hhcmQtMg%3D%3D_b11ecb8a-3512-4423-89ad-7b443b860bed)
+Even G1: https://www.evenrealities.com/products/g1-b
+Envision: https://shop.letsenvision.com/products/glasses-home
+Xiamoi Smart glasses: https://www.mi.com/global/product/xiaomi-smart-audio-glasses/
+Gemini google smart glasses (not out yet): https://blog.google/products/android/android-xr-gemini-glasses-headsets/
+Meta Orion (not out yet): https://www.meta.com/emerging-tech/orion/
 Ai bypassers:
 Undetectable.aipro: https://www.undetectableai.pro/
 GPTinf: https://app.gptinf.com/
