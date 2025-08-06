@@ -140,6 +140,7 @@ https://lmarena.ai/leaderboard
 https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard
 https://llmarena.ai/
 https://livebench.ai/
+https://arcprize.org/leaderboard
 
 #1: Gemini, 15 months free as of may 22 2025
 #2: X/Grok, a month or so free as long as you sign up with the .edu email as of may 22 2025 but believed to last until the end of this year or forever.
