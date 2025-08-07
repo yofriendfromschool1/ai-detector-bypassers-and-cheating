@@ -3,6 +3,7 @@ bypass ai decectors
 some ais first:
 kinda op if u put ur school and yall know eachother and flash cards: Gizmo ai: https://gizmo.ai/
 lowkey fw it: https://lmarena.ai/?mode=side-by-side (2 models at once to see which is better and it allows paid models too, and you can vote which one is better to help the community.)
+Same as lmarena but has way more community support and more models and more paid ones like o3 pro - https://yupp.ai/
 #1: Gemini by google: https://gemini.google.com/
 #2: DeepSeek: https://chat.deepseek.com
 #3: ChatGPT: https://chatgpt.com
@@ -141,6 +142,7 @@ https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard
 https://llmarena.ai/
 https://livebench.ai/
 https://arcprize.org/leaderboard
+https://yupp.ai/
 
 #1: Gemini, 15 months free as of may 22 2025
 #2: X/Grok, a month or so free as long as you sign up with the .edu email as of may 22 2025 but believed to last until the end of this year or forever.
