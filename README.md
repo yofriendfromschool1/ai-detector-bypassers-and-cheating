@@ -83,12 +83,14 @@ https://venice.ai/chat
 https://cleus.ai/chat
 https://lmstudio.ai/ (only available for windows/mac/linux) (search uncensored)
 jailbreak prompts:
-https://www.reddit.com/r/ChatGPTJailbreak/comments/1law92b/jailbreak_for_ai/
-https://www.reddit.com/r/ChatGPTJailbreak/comments/1li4pdj/jailbreak_cici_meta_ai_that_bypasses_filters_for/
 https://github.com/l0gicx/ai-model-bypass
+https://www.reddit.com/r/ChatGPTJailbreak/
 https://www.reddit.com/r/ChatGPTJailbreak/comments/1l56aus/updated_llm_jailbreaking_guide/
 https://www.reddit.com/r/ChatGPTJailbreak/comments/1kky3ym/the_true_way_to_jailbrake_any_ai/
 https://jailbreakprompts.cc/
+https://sites.google.com/view/llm-jailbreak-study/taxonomy
+https://github.com/cyberark/FuzzyAI
+Practice your own: https://gandalf.lakera.ai/baseline https://emoji-encoder.vercel.app/?mode=encode https://www.youtube.com/watch?v=Qvx2sVgQ-u0
 
 Grade yourself:
 Cograder: https://v2.cograder.com/app
