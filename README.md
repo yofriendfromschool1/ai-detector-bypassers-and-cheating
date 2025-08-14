@@ -85,6 +85,8 @@ https://lmstudio.ai/ (only available for windows/mac/linux) (search uncensored)
 jailbreak prompts:
 https://github.com/l0gicx/ai-model-bypass
 https://www.reddit.com/r/ChatGPTJailbreak/
+https://www.reddit.com/r/PromptEngineering/
+https://www.reddit.com/r/PromptEngineering/comments/120fyp1/useful_links_for_getting_started_with_prompt/
 https://www.reddit.com/r/ChatGPTJailbreak/comments/1l56aus/updated_llm_jailbreaking_guide/
 https://www.reddit.com/r/ChatGPTJailbreak/comments/1kky3ym/the_true_way_to_jailbrake_any_ai/
 https://jailbreakprompts.cc/
@@ -93,7 +95,7 @@ https://github.com/cyberark/FuzzyAI
 https://github.com/elder-plinius/L1B3RT4S
 https://discord.gg/basi
 https://github.com/elder-plinius/CL4R1T4S
-Practice your own: https://gandalf.lakera.ai/baseline https://emoji-encoder.vercel.app/?mode=encode https://www.youtube.com/watch?v=Qvx2sVgQ-u0
+Practice your own: https://gandalf.lakera.ai/baseline https://emoji-encoder.vercel.app/?mode=encode https://www.youtube.com/watch?v=Qvx2sVgQ-u0 https://www.youtube.com/watch?v=QoiTBYx6POs https://github.com/tpai/gandalf-prompt-injection-writeup https://www.reddit.com/r/PromptEngineering/comments/1k6806u/5_prompt_injection_techniques_i_learned_while/
 
 Grade yourself:
 Cograder: https://v2.cograder.com/app
