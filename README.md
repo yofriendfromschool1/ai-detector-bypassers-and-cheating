@@ -90,6 +90,9 @@ https://www.reddit.com/r/ChatGPTJailbreak/comments/1kky3ym/the_true_way_to_jailb
 https://jailbreakprompts.cc/
 https://sites.google.com/view/llm-jailbreak-study/taxonomy
 https://github.com/cyberark/FuzzyAI
+https://github.com/elder-plinius/L1B3RT4S
+https://discord.gg/basi
+https://github.com/elder-plinius/CL4R1T4S
 Practice your own: https://gandalf.lakera.ai/baseline https://emoji-encoder.vercel.app/?mode=encode https://www.youtube.com/watch?v=Qvx2sVgQ-u0
 
 Grade yourself:
