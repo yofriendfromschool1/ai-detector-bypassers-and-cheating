@@ -137,7 +137,7 @@ Free: Humbot, Hix.ai, Rephrasy, UnAIMyText, GPTInf, BypassGPT, make ai use your 
 
 NOTE: if an AI bypasser doesn't work try using it over and over again like copy the still ai detected text but put it back into the ai bypasser and regenerate again and keep doing it until you get 0% should work with almost all ai bypasses (only tried with undetectable.aipro btw but should work with most if not all)
 
-What I personally do, if its a research assignment use Gemini Deep Search then copy that text put into claude have it rewrite it using prompt 9 then you could get it to rewrite it again using the same prompt, than use twaingpt with English (US) and basic level twice and it should be 0% to really check I use originality.ai, ZeroGPT, GPTZero, and sapling.ai.
+What I personally do, if its a research assignment use Perplexity then copy that text put into claude have it rewrite it using prompt 9 then you could get it to rewrite it again using the same prompt, than use twaingpt with English (US) and basic level twice and it should be 0% to really check I use originality.ai, ZeroGPT, GPTZero, and sapling.ai.
 
 NOTEEEEEEEEEEEE:
 if what you are looking for is paid but, your a college student or student with an student email address that ends in .edu then, these have discounts:
