@@ -146,10 +146,14 @@ if what you are looking for is paid but, your a college student or student with 
 MORE INFO:
 https://lmarena.ai/leaderboard
 https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard
-https://llmarena.ai/
-https://livebench.ai/
+https://openlm.ai/chatbot-arena/
 https://arcprize.org/leaderboard
+https://yupp.ai/leaderboard
+https://artificialanalysis.ai/
+https://livebench.ai/
+https://llmarena.ai/
 https://yupp.ai/
+
 
 #1: Gemini, 15 months free as of may 22 2025
 #2: X/Grok, a month or so free as long as you sign up with the .edu email as of may 22 2025 but believed to last until the end of this year or forever.
