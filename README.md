@@ -155,7 +155,7 @@ https://llmarena.ai/
 https://yupp.ai/
 
 
-Cheating for kahoot or edpuzzle or quizizz or blooket or quizlet or deltamath anything else:
+Cheating for kahoot or edpuzzle or quizizz or blooket or quizlet or deltamath crosswordlabs, anything else:
 Kahoot: https://github.com/CPScript/Kitty-Tools
 https://schoolcheats.net/
 https://github.com/therealgliz/blooket-hacks
@@ -167,6 +167,11 @@ https://github.com/jokeri2222/Quizlet-Hack
 http://github.com/xelaoliver/quizlet-match-solver
 https://github.com/DxltaMath/DMIx
 https://github.com/bribes/deltamath-equation-copier
+https://github.com/connor33341/CrossWordLabs-Hacks
+https://github.com/gdavib/crosswordlabs-hack
+https://github.com/gkamtzir/crosswordlabs-solver
+https://github.com/lilamdimadethis/crosswordlabs-Answers-Revealer-by-lil-ami
+https://github.com/grabovv/js-crossword-labs-solver
 
 #1: Gemini, 15 months free as of may 22 2025
 #2: X/Grok, a month or so free as long as you sign up with the .edu email as of may 22 2025 but believed to last until the end of this year or forever.
