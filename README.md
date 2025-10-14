@@ -141,7 +141,8 @@ What I personally do, if its a research assignment use Perplexity then copy that
 
 NOTEEEEEEEEEEEE:
 if what you are looking for is paid but, your a college student or student with an student email address that ends in .edu then, these have discounts:
-
+also if you get a worksheet that looks printed or could possibly be a pdf then search up the name of it on google and if you still cant find it use
+special search querys (google dorking) like filetype:pdf
 
 MORE INFO:
 https://lmarena.ai/leaderboard
@@ -155,7 +156,7 @@ https://llmarena.ai/
 https://yupp.ai/
 
 
-Cheating for kahoot or edpuzzle or quizizz or blooket or quizlet or deltamath crosswordlabs, anything else:
+Cheating for kahoot or edpuzzle or quizizz or blooket or quizlet or deltamath crosswordlabs nitrotype, anything else:
 Kahoot: https://github.com/CPScript/Kitty-Tools
 https://schoolcheats.net/
 https://github.com/therealgliz/blooket-hacks
@@ -172,6 +173,11 @@ https://github.com/gdavib/crosswordlabs-hack
 https://github.com/gkamtzir/crosswordlabs-solver
 https://github.com/lilamdimadethis/crosswordlabs-Answers-Revealer-by-lil-ami
 https://github.com/grabovv/js-crossword-labs-solver
+https://github.com/connor33341/NitroTypeAutoJS
+https://github.com/connor33341/NitroTypeAuto
+https://github.com/kgsensei/NitroType-AutoTyper
+https://github.com/wwwg/UltraTypeBot
+https://github.com/kgsensei/NitroTypeHack2
 
 #1: Gemini, 15 months free as of may 22 2025
 #2: X/Grok, a month or so free as long as you sign up with the .edu email as of may 22 2025 but believed to last until the end of this year or forever.
