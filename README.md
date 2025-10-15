@@ -163,6 +163,7 @@ https://github.com/therealgliz/blooket-hacks
 https://github.com/randomstuff69/blooketcheatsplus
 https://github.com/gbaranski/quizizz-cheat
 https://cheatnetwork.eu/
+https://github.com/Blooket-Council/Blooket-Cheats
 quizziz and quizlet: https://github.com/UndercoverGoose/classroom-cheats
 https://github.com/jokeri2222/Quizlet-Hack
 http://github.com/xelaoliver/quizlet-match-solver
