@@ -156,7 +156,7 @@ https://llmarena.ai/
 https://yupp.ai/
 
 
-Cheating for kahoot or edpuzzle or quizizz or blooket or quizlet or deltamath crosswordlabs nitrotype, anything else:
+Cheating for kahoot or edpuzzle or quizizz or blooket or quizlet or deltamath crosswordlabs, coursehero, nitrotype, anything else:
 Kahoot: https://github.com/CPScript/Kitty-Tools
 https://schoolcheats.net/
 https://github.com/therealgliz/blooket-hacks
@@ -179,6 +179,11 @@ https://github.com/connor33341/NitroTypeAuto
 https://github.com/kgsensei/NitroType-AutoTyper
 https://github.com/wwwg/UltraTypeBot
 https://github.com/kgsensei/NitroTypeHack2
+https://github.com/OriginalAlien/CourseHero-Tool
+https://github.com/luigia/Remove-Coursehero-Monthly-Limit
+coursehero: https://github.com/gregcw11/CHDL
+coursehero: https://gist.github.com/sean3z/49553cda816d6b3a0795dad74b0bd6d2
+https://github.com/daijro/CourseHeroUnblur
 
 #1: Gemini, 15 months free as of may 22 2025
 #2: X/Grok, a month or so free as long as you sign up with the .edu email as of may 22 2025 but believed to last until the end of this year or forever.
