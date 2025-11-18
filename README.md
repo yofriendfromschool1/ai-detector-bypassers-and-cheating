@@ -120,7 +120,7 @@ Prompt 5 ( fill with own info): https://docs.google.com/document/d/1i60bsqZ8TtW-
 Prompt 6: write like Shakespeare
 prompt 7: write like (any good writer or human)
 prompt 8: use high burstiness and high perplexity.
-prompt 9: use high burstiness and high perplexity, don't use em dashes or en dashes, write more human-like, don't use unnecessary words and phrases, don't do wording/any big words that only an person in college or writer would know, can use professional writers like Mark Twain, Hemingway, and Shakespeare or anymore writers as an example for your writing style BUT DO NOT MENTION THEM, and make it have 0% in AI detectors like ZeroGPT or GPTZero or Originality.ai or CopyLeaks. (use with claude or chatgpt for best results.)
+prompt 9: use high burstiness and high perplexity,don't be too repeitive, don't use em dashes or en dashes, write more human-like, don't use unnecessary words and phrases, don't do wording/any big words that only an person in college or writer would know, can use professional writers like Mark Twain, Hemingway, and Shakespeare or any more writers as an example for your writing style BUT DO NOT MENTION THEM, and make it have 0% in AI detectors like ZeroGPT or GPTZero or Originality.ai or CopyLeaks. (use with unpopular but high quailty latest ai's like claude or glm, or ask research ai like perplexity or grok or unbiased ai to see which ai to use and could even ask for a prompt for it)
 
 LET ME KNOW IF YOU HAVE ANYTHING ELSE THATS NOT ON HERE PUT IN ISSUES AND I WILL ADD AND APPROVE OF IT ALSO ALWAYS CHECK FOR AI DONT JUST ASSUME
 Always use ai detectors before btw.
