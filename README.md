@@ -144,7 +144,7 @@ if what you are looking for is paid but, your a college student or student with 
 also if you get a worksheet that looks printed or could possibly be a pdf then search up the name of it on google and if you still cant find it use
 special search querys (google dorking) like filetype:pdf
 
-MORE INFO:
+MORE INFO/Leaderboards/best ai:
 https://lmarena.ai/leaderboard
 https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard
 https://openlm.ai/chatbot-arena/
@@ -154,6 +154,11 @@ https://artificialanalysis.ai/
 https://livebench.ai/
 https://llmarena.ai/
 https://yupp.ai/
+https://agi.safe.ai/
+https://artificialanalysis.ai/leaderboards/models
+https://artificialanalysis.ai/evaluations/humanitys-last-exam
+https://htihle.github.io/weirdml.html
+https://matharena.ai/
 
 
 Cheating for kahoot or edpuzzle or quizizz or blooket or quizlet or deltamath crosswordlabs, coursehero, nitrotype, anything else:
