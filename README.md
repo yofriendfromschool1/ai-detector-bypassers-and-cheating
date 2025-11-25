@@ -190,6 +190,10 @@ coursehero: https://github.com/gregcw11/CHDL
 coursehero: https://gist.github.com/sean3z/49553cda816d6b3a0795dad74b0bd6d2
 https://github.com/daijro/CourseHeroUnblur
 
+Extra:
+if you cant copy highlighted text either use an extension to make it convert to pdf like, "Print Selection to PDF" or "Glasp" https://glasp.co/ and copy from there.
+or just use the pdf. or CTRL (or command on mac) + P to print the page, but if its a very long page do CTRL + SHIFT + P and it will print all pages, but make sure it is microsoft print to pdf or save as pdf.
+
 #1: Gemini, 15 months free as of may 22 2025
 #2: X/Grok, a month or so free as long as you sign up with the .edu email as of may 22 2025 but believed to last until the end of this year or forever.
 #3: ChatGPT: 2 months free until end of may 2025
