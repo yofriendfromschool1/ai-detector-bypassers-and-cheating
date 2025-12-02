@@ -152,7 +152,13 @@ https://www.vellum.ai/llm-leaderboard?utm_source=google&utm_medium=organic
 https://llm-stats.com/
 https://leaderboard.snorkel.ai/
 https://countless.dev/
+https://livecodebench.github.io/
+https://simple-bench.com/
+https://scale.com/leaderboard
+https://ai-stats.phaseo.app/
 https://arcprize.org/leaderboard
+https://epoch.ai/benchmarks
+https://lmcouncil.ai/benchmarks
 https://yupp.ai/leaderboard
 https://artificialanalysis.ai/
 https://livebench.ai/
