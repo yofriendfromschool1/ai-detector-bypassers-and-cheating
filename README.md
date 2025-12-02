@@ -148,6 +148,10 @@ MORE INFO/Leaderboards/best ai:
 https://lmarena.ai/leaderboard
 https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard
 https://openlm.ai/chatbot-arena/
+https://www.vellum.ai/llm-leaderboard?utm_source=google&utm_medium=organic
+https://llm-stats.com/
+https://leaderboard.snorkel.ai/
+https://countless.dev/
 https://arcprize.org/leaderboard
 https://yupp.ai/leaderboard
 https://artificialanalysis.ai/
