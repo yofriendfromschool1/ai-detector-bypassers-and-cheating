@@ -201,7 +201,7 @@ coursehero: https://gist.github.com/sean3z/49553cda816d6b3a0795dad74b0bd6d2
 https://github.com/daijro/CourseHeroUnblur
 
 Extra:
-if you cant copy highlighted text either use an extension to make it convert to pdf like, "Print Selection to PDF" or "Glasp" https://glasp.co/ and copy from there.
+if you cant copy highlighted text either use an extension to make it convert to pdf like, "Print Selection to PDF" or "Glasp" https://glasp.co/ and copy from there. or also get a copy text extension like: allow copy+ or copy text easily or something
 or just use the pdf. or CTRL (or command on mac) + P to print the page, but if its a very long page do CTRL + SHIFT + P and it will print all pages, but make sure it is microsoft print to pdf or save as pdf.
 
 #1: Gemini, 15 months free as of may 22 2025
