@@ -26,7 +26,7 @@ chrome.storage.local.get(['paid', 'lifetimePaid', 'blockedUrls'], function (resu
         return;
     }
 
-    const isPaid = result.lifetimePaid || result.paid;
+    const isPaid = true;
 
     function checkMetaTag() {
         const metaElement = document.querySelector('meta[name="apple-itunes-app"][content="app-id=480883488"]');
