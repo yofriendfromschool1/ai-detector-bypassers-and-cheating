@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CanvasHack</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="top">
+        <div class="top-icon left" id="updates_icon">
+            <i id="important_alert_icon" class="fa-solid fa-circle-exclamation" style="display: none;"></i>
+            <i class="fa-solid fa-bell icon">
+                <span>Updates</span>
+            </i>
+        </div>
+        <a href="https://canvashack.com/" target="_blank" class="canvas-hack-web-link"><img
+                src="./images/canvashack-thin.png" class="logo-img" draggable="false"></a>
+        <div class="top-icon" id="settings_icon">
+            <i class="fa-solid fa-gear icon">
+                <span>Settings</span>
+            </i>
+        </div>
+    </div>
+    <div class="thh-modal-overlay" id="logoutModal">
+        <div class="thh-modal-content thh-modal-smaller">
+            <div class="thh-modal-header">
+                <h2>Confirm Logout</h2>
+                <button class="thh-modal-close" id="logoutModalClose"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <p class="thh-modal-subtitle">Are you sure you want to log out?</p>
+
+            <div class="thh-modal-body">
+                <!-- Optional: An alert or note -->
+                <div class="thh-alert-box">
+                    <span class="thh-alert-text">
+                        You can log back in anytime using the email you purchased with.
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="thh-modal-footer">
+                <button class="thh-btn thh-btn-gray" id="logoutCancelBtn">Cancel</button>
+                <button class="thh-btn thh-btn-primary" id="logoutConfirmBtn">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="thh-modal-overlay" id="injectedUINudgeModal" style="display:none">
+        <div class="thh-modal-content thh-modal-smaller">
+            <div class="thh-modal-header">
+                <h2>Show In-Canvas Activation Toolbar?</h2>
+                <button class="thh-modal-close" id="injectedUINudgeClose">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <p class="thh-modal-subtitle">
+                You can change this anytime in the <b>Settings</b> page.
+            </p>
+
+            <div class="thh-modal-body">
+                <div class="thh-alert-box" style="margin-bottom:10px;">
+                    <span class="thh-alert-text">
+                       The toolbar, part of the paid plan, by default appears on quiz pages. Visible for peace of mind but easier to spot. Hiding it only removes it from view, CanvasHack protection works the same either way.
+                    </span>
+                </div>
+
+                <!-- Replace these with your real screenshots -->
+                <div id="injectedUINudgeGallery">
+                    <img src="./images/menu-1.png" alt="Toolbar example 1">
+                </div>
+            </div>
+
+            <div class="thh-modal-footer">
+                <button class="thh-btn thh-btn-gray" id="hideToolbarBtn">Hide it</button>
+                <button class="thh-btn thh-btn-primary" id="keepToolbarBtn">Keep it visible<i class="fa-solid fa-thumbs-up"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="thh-modal-overlay" id="featureDetailModal">
+        <div class="thh-modal-content thh-modal-smaller">
+            <div class="thh-modal-header">
+                <h2 id="featureDetailTitle">Feature Name</h2>
+                <button class="thh-modal-close" id="featureDetailClose"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <p class="thh-modal-subtitle" id="featureDetailSubtitle">
+            </p>
+            <div class="thh-modal-body">
+                <p id="featureDetailText" style="color:#e0e0e0; line-height:1.5; font-size:14px;">
+                </p>
+            </div>
+            <div class="thh-modal-footer">
+                <button class="thh-btn thh-btn-primary" id="featureDetailCloseBtn">Close Details <i
+                        class="fa-solid fa-delete-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirm Disable Privacy Guard -->
+    <div class="thh-modal-overlay" id="confirmDisablePrivacyModal" style="display:none">
+        <div class="thh-modal-content thh-modal-smaller">
+            <div class="thh-modal-header">
+                <h2>Disable Privacy Guard?</h2>
+                <button class="thh-modal-close" id="confirmDisableClose"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <p class="thh-modal-subtitle">
+                This will remove your tab-switch protection. You'll need to reactivate it before your next test.
+            </p>
+            <div class="thh-modal-footer">
+                <button class="thh-btn thh-btn-gray" id="cancelDisablePrivacy">Cancel</button>
+                <button class="thh-btn thh-btn-primary" id="confirmDisablePrivacy">Disable</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Upgrade Auto-Charge Confirmation Modal -->
+    <div class="thh-modal-overlay" id="autoChargeModal">
+        <div class="thh-modal-content thh-modal-smaller">
+            <div class="thh-modal-header">
+                <h2>Confirm Upgrade</h2>
+                <button class="thh-modal-close" id="autoChargeModalClose"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <p class="thh-modal-subtitle">This will auto charge your saved payment method.</p>
+
+            <div class="thh-modal-body">
+                <div class="thh-alert-box">
+                    <span class="thh-alert-text">
+                        We'll automatically charge your saved payment method automatically for the one-time lifetime
+                        fee.
+                        Once successful, monthly payments will turn off and you'll unlock lifetime access!
+                    </span>
+                </div>
+            </div>
+
+            <div class="thh-modal-footer">
+                <button class="thh-btn thh-btn-gray" id="autoChargeCancelBtn">Cancel</button>
+                <button class="thh-btn thh-btn-primary" id="autoChargeConfirmBtn">Upgrade<i
+                        class="fa-solid fa-circle-check"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="page one" id="p1">
+        <p class="current-status">Current Status: <strong><span id="paidStatus">Unpaid</span></strong></p>
+        <div class="buttons">
+            <button type="button" id="paymentButtonPlace">Purchase</button>
+            <button type="button" class="login" id="loginButton">Login</button>
+            <button type="button" style="display: none;" id="manageButton"><span>Manage</span></button>
+            <div id="upgradeButtonContainer">
+                <div id="upgradeBK"></div>
+                <button type="button" id="upgradeButtonTop">Upgrade</button>
+                <h5 class="upgradeHover">Monthly<i class="fa-solid fa-arrow-right"></i>One-time</h5>
+            </div>
+        </div>
+        <div class="features">
+            <div class="feature" data-status="off">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <h2>Answer Saver</h2>
+                <p id="feature-status-as">Off</p>
+                <i class="fa-regular fa-circle-info" id="question-mark"></i>
+                <div class="feature-desc">
+                    Fetches your full submission history via the Canvas API, finds your highest-scoring attempt for each
+                    question (even on later tries), and auto-fills those "best" answers when you hover.
+                </div>
+            </div>
+
+            <div class="feature" data-status="off">
+                <i class="fa-solid fa-shield-keyhole"></i>
+                <h2>Privacy Guard</h2>
+                <p id="feature-status-pg">Deactivated</p>
+                <i class="fa-regular fa-circle-info" id="question-mark"></i>
+                <div class="feature-desc">
+                    Overrides browser focus/visibility APIs and blocks Canvas's tab-switch listeners so you can flip
+                    away without ever being flagged "off task." Stays active for as long as your subscription is on.
+                </div>
+            </div>
+
+            <div class="feature" data-status="off" id="feature-ks">
+                <i class="fa-solid fa-laptop-binary"></i>
+                <h2>Kiosk Spoof</h2>
+                <p id="feature-status-ks">Uninjected</p>
+                <i class="fa-regular fa-circle-info" id="question-mark"></i>
+                <div class="feature-desc">
+                    Injects a fake Canvas Kiosk App banner into your normal Canvas tab to make teachers think you're
+                    inside the secure kiosk environment-while you remain free to use all CanvasHack features. Does not
+                    need to be activated for other protection.
+                </div>
+            </div>
+        </div>
+
+        <div class="old-features" style="display: none;">
+            <h2 id="preDesc">Paid Pre-Activated Features:</h2>
+            <h3 data-feature="save">1. <span>Save Feature:</span> Auto saves correct answers in quizzes with multiple
+                attempts.</h3>
+            <h3 data-feature="privacy">2. <span>Privacy Mode:</span> Auto prevents detection of tab-switching during
+                Canvas
+                quizzes.</h3>
+            <h3 data-feature="kiosk" id="toggleButton" class="kiosk unpaid">3. <span>Kiosk Bar:</span> Fakes the Canvas
+                Kiosk app so you stay logged in during exams.</h3>
+        </div>
+        <h4 class="unpaid new" id="status">
+            <span>Tab-Switching Request Blocker: <b id="statusReader"><i
+                        class="fa-regular fa-circle-exclamation"></i>OFF</b></span>
+            <br>
+            <span><span class="ch">[CH]</span>Full Testing Security: <b id="statusReader"><i
+                        class="fa-regular fa-circle-exclamation"></i>OFF</b>
+        </h4>
+
+        <div class="get-help main new">
+            <p>If you ever have any questions or want to see a full demo, please join the Discord server and we'll help
+                you out! <a href="https://discord.gg/CtpHA6XC2u" target="_blank"><i
+                        class="fa-light fa-arrow-up-right-from-square"></i>https://discord.gg/CtpHA6XC2u</a>
+            </p>
+        </div>
+    </div>
+    <div class="page two" id="p2">
+        <div class="page-type" id="settings_back">
+            <i class="fa-solid fa-arrow-left"></i>
+            <h6>Settings</h6>
+        </div>
+        <div class="settings">
+            <div class="url-blocker">
+                <div class="tooltip">
+                    <h5>Block URLs from Injection:</h5>
+                    <i class="fas fa-info-circle info-icon"></i>
+                    <span class="tooltiptext">Any URLs you add here will be skipped by CanvasHack's injection logic. If
+                        you
+                        need help, please contact support. Use commas to separate multiple sites. Do NOT include your
+                        school's Canvas URL.</span>
+                </div>
+                <div id="urlContainer"></div>
+                <input type="text" id="urlInput" placeholder="Enter URLs separated by commas (ex. https://google.com)">
+                <button id="saveUrls">Save URLs</button>
+            </div>
+
+            <div class="feature-toggle" style="display: none;">
+                <h5>Save Correct Answers on Multiple Attempts:</h5>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="saveAnswersCheckbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="feature-toggle" id="toggleInjectedUIBlock">
+                <div class="tooltip">
+                    <h5>Show In-Canvas Activation Toolbar:</h5>
+                    <i class="fas fa-info-circle info-icon"></i>
+                    <span class="tooltiptext">Controls the small on-page toolbar ( ⓘ | X ) and its status panel injected
+                        on Canvas quiz related pages. Turn OFF to fully hide that UI everywhere. Turn ON to show it
+                        again. NOTE: your CanvasHack protection will still always run in the background even if the UI
+                        is hidden.</span>
+                </div>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="showInjectedUICheckbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="logout-container">
+                <button type="button" id="logoutButton"><i class="fa-solid fa-right-from-bracket"></i>Logout</button>
+                <hr />
+                <button type="button" id="upgradeButton"><span>Upgrade:</span> Monthly<i
+                        class="fa-solid fa-arrow-right"></i>One-time</button>
+            </div>
+
+            <div class="get-help">
+                <p>If you ever have any questions or issues join the discord server and we'll help you out! <a
+                        href="https://discord.gg/CtpHA6XC2u" target="_blank">https://discord.gg/CtpHA6XC2u</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="paymentButton" style="display: none;"></div>
+    <div id="paymentButtonLifetime" style="display: none;"></div>
+    <div class="page three" id="p3">
+        <div class="page-type" id="pricing_back">
+            <i class="fa-solid fa-arrow-left"></i>
+            <h6>Pricing</h6>
+        </div>
+        <div class="pricing">
+            <p class="launch-offer">Launch Offer: <span>25% OFF the first 100 orders</span></p>
+            <hr />
+            <div class="pricing-option monthly unactive" id="monthlyOption">
+                <i class="fa-regular fa-circle"></i>
+                <h5>Monthly</h5>
+                <div class="price">
+                    <span class="original-price">$10</span>
+                    <span class="discounted-price">$5.99</span>
+                </div>
+                <h6 class="right cool">Billed Monthly</h6>
+            </div>
+            <div class="pricing-option lifetime active" id="lifetimeOption">
+                <i class="fa-solid fa-circle-check"></i>
+                <h5>One time</h5>
+                <div class="price">
+                    <span class="original-price">$120</span>
+                    <span class="discounted-price">$89.99</span>
+                </div>
+                <h6 class="right special">Save $30</h6>
+            </div>
+            <button type="button" class="purchase-button" id="paymentButtonLifetime">Purchase now <i
+                    class="fa-solid fa-arrow-right"></i></button>
+            <h3>Already paid? <span id="purchase-login-button">Log in</span></h3>
+            <div class="bottom-pricing">
+                <div class="payments-methods" style="display: none;">
+                    <img src="./images/payments/visa.svg" alt="Visa Payment" />
+                    <img src="./images/payments/mastercard.svg" alt="MasterCard Payment" />
+                    <img src="./images/payments/amex.svg" alt="Amex Payment" />
+                    <img src="./images/payments/discover.svg" alt="Discover Payment" />
+                    <img src="./images/payments/paypal.svg" alt="PayPal Payment" />
+                    <img src="./images/payments/applepay.svg" alt="Apple Pay Payment" />
+                    <img src="./images/payments/gpay.svg" alt="Google Pay Payment" />
+                </div>
+                <div class="payments-methods">
+                    <h5 class="secure-payment"><i class="fa-solid fa-lock"></i>Secure Payment with <a
+                            href="https://stripe.com" target="_blank">Stripe</a> | Cancel Anytime</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page four" id="p4" style="display:none;">
+        <div class="page-type" id="manage_back">
+            <i class="fa-solid fa-arrow-left"></i>
+            <h6>Manage Account</h6>
+        </div>
+        <div class="manage-account">
+            <div class="manage-item">
+                <h2 class="left-item-manage">Subscription:</h2>
+                <div class="manage-item-sub">
+                    <h2 class="active"><i class="fa-solid fa-square-check"></i><span
+                            id="subscriptionStatus">Active</span></h2>
+                    <p class="sub-p" id="subscriptionType">Subscription Type</p>
+                </div>
+            </div>
+            <div class="manage-item">
+                <h2 class="left-item-manage">Account Email:</h2>
+                <div class="manage-item-sub">
+                    <p id="customerEmailDisplay"></p>
+                </div>
+            </div>
+            <!-- Next Payment Date (only visible for monthly users) -->
+            <div class="manage-item" id="nextPaymentItem" style="display: none;">
+                <h2 class="left-item-manage-2">Next Payment Date: <p id="nextPaymentDate"></p>
+                </h2>
+            </div>
+            <div class="manage-item" id="cancel-manage-cont">
+                <button id="cancelSubscriptionButton" style="display: none;">Cancel Subscription</button>
+            </div>
+        </div>
+    </div>
+    <div class="page five" id="p5" style="display:none;">
+        <div class="page-five">
+            <div class="main-content-five">
+                <div class="loading-object">
+                    <div class="object-part payment">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <i class="fa-solid fa-arrow-right middle"></i>
+                    <div class="object-part loading">
+                        <i class="fa-solid fa-rotate"></i>
+                    </div>
+                </div>
+                <h2>Your payment is in the process of completion, after purchasing please <span>close and re-open</span>
+                    this extension to activate all of your paid features.</h2>
+                <button class="close-reopen" id="close-reopen">Close Extension</button>
+            </div>
+        </div>
+    </div>
+    <div class="page six" id="p6" style="display:none;">
+        <div class="page-type" id="upgrade_back">
+            <i class="fa-solid fa-arrow-left"></i>
+            <h6>Upgrade to Lifetime</h6>
+        </div>
+        <div class="main-content-six">
+            <h2>Upgrade your monthly subscription to a one-time payment. Say goodbye to monthly fees!</h2>
+            <div class="pricing-option lifetime" id="lifetimeOption">
+                <div class="price">
+                    <span class="original-price lifetimeOriginalPrice"></span>
+                    <span class="discounted-price lifetimeDiscountedPrice"></span>
+                </div>
+                <h6 class="right cool">Save $30</h6>
+            </div>
+            <button type="button" id="paymentButtonLifetimeUpgradeCPM" class="paymentButtonLifetimeUpgrade">
+                <i class="fa-solid fa-credit-card-front"></i>Purchase Upgrade
+            </button>
+            <div class="payment-option">
+                After purchase, your old plan will be canceled and your lifetime account will activate with full
+                access—no more monthly fees.
+            </div>
+            <!--<button type="button" id="paymentButtonLifetimeUpgrade" class="paymentButtonLifetimeUpgrade">
+                <i class="fa-solid fa-credit-card-front"></i>Purchase Upgrade
+            </button>
+            <div class="payment-option">
+                Choose the upgrade option below to use a discount code, or a different payment method to purchase.
+            </div>
+            <button type="button" id="paymentButtonLifetimeUpgradeCPM" class="paymentButtonLifetimeUpgradeCPM">
+                <i class="fa-solid fa-money-check-pen"></i>Change Payment Method
+            </button>-->
+        </div>
+        <div class="payments-methods">
+            <h5 class="secure-payment"><i class="fa-solid fa-lock"></i>Secure Payment with <a href="https://stripe.com"
+                    target="_blank">Stripe</a> | Lifetime Access</h5>
+        </div>
+    </div>
+    <div class="page seven" id="p7" style="display:none;">
+        <div class="page-type" id="updates_back">
+            <i class="fa-solid fa-arrow-left"></i>
+            <h6>Updates & Announcements</h6>
+        </div>
+        <div id="updates_content"></div>
+    </div>
+    <div class="page eight" id="p8" style="display:none;">
+        <div class="page-type" id="login_back">
+            <i class="fa-solid fa-arrow-left"></i>
+            <h6>Login</h6>
+        </div>
+        <div class="login-box">
+            <div class="login-icon"><i class="fa-solid fa-envelopes"></i></div>
+            <div class="login-main-content">
+                <h2>Login <i class="fa-solid fa-right-to-bracket"></i></h2>
+                <p>Enter the email you paid with:</p>
+                <input type="text" id="email-login-input" placeholder="e.g. john.doe@gmail.com" autocomplete="off" />
+                <button id="email-next-button">Next</button>
+                <h3 id="forgot-account">Any Issues? <span><a href="https://discord.gg/CtpHA6XC2u"
+                            target="_blank">Contact us!</a></span></h3>
+                <h4 id="login-indicator-message"></h4>
+            </div>
+        </div>
+    </div>
+    <div id="p9" class="page nine" style="display:none;">
+        <div class="login-box">
+            <div class="login-icon"><i class="fa-solid fa-envelope-dot"></i></div>
+            <div class="login-main-content">
+                <h2><i class="fa-solid fa-square-check"></i>Check Your Email</h2>
+                <p>We sent a login link to your inbox.</p>
+                <br />
+                <p>Please follow the instructions in that email to complete your login. If you don't see a message soon,
+                    check your spam folder or try this login form again.</p>
+                <br />
+                <p>Once you have verified your email, please re-open the <span>CanvasHack extension</span> to activate
+                    everything.</p>
+            </div>
+        </div>
+    </div>
+    <div id="step-container">
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%;"></div>
+        </div>
+        <div class="step-content">
+            <div class="step step-1 active">
+                <div class="content-step step-1">
+                    <h2 class="header">Turn <span>invisible</span> during any Canvas test</h2>
+                    <p class="desciptor">Start testing completely worry free, finish quizzes easily, and maintain a
+                        undetectable low-profile on all Canvas tests.</p>
+                    <ul class="ul-list">
+                        <li class="li-list"><i class="fa-solid fa-check"></i>Prevent detection of <b>tab-switching</b>
+                        </li>
+                        <li class="li-list"><i class="fa-solid fa-check"></i>Turn <b>invisible</b> during all tests</li>
+                        <li class="li-list"><i class="fa-solid fa-check"></i>Save <b>correct answers</b> in quizzes</li>
+                        <li class="li-list"><i class="fa-solid fa-check"></i><b>Spoof</b> canvas kiosk app</li>
+                        <li class="li-list"><i class="fa-solid fa-check"></i>Works with <b>all</b> Canvas platforms</li>
+                        <li class="li-list"><i class="fa-solid fa-check"></i>100% Always Working <b>Guarantee</b></li>
+                    </ul>
+                    <ul class="ul-list special">
+                        <li class="li-list"><i class="fa-solid fa-user"></i><span>2,000+</span> Happy CanvasHack Users!
+                        </li>
+                    </ul>
+                </div>
+                <div class="bot-but-con">
+                    <button class="next-btn">Get Started<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="step step-2">
+                <div class="content-step step-2">
+                    <h2 class="header">Interception and Redirection...</h2>
+                    <ul class="ul-list">
+                        <li class="li-list"><i class="fa-solid fa-check"></i>Invisible Tab Switching</li>
+                        <li class="li-list"><i class="fa-solid fa-check"></i>Cheat undetected during tests</li>
+                    </ul>
+                    <div class="image">
+                        <img src="./images/action-log-2.png" class="image-one" />
+                    </div>
+                </div>
+                <div class="bot-but-con">
+                    <button class="next-btn">Got it!<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="step step-3">
+                <div class="content-step step-3">
+                    <h2 class="header">Go Fully Invisible!</h2>
+                    <div class="image">
+                        <img src="./images/fake-code.png" class="image-two" alt="" />
+                    </div>
+                    <ul class="ul-list">
+                        <li class="li-list"><i class="fa-solid fa-check"></i>Prevents Canvas tracking</li>
+                        <li class="li-list"><i class="fa-solid fa-check"></i>Keeps you marked as "on task"</li>
+                        <li class="li-list"><i class="fa-solid fa-check"></i>Hides all off-test actions</li>
+                    </ul>
+                </div>
+                <div class="bot-but-con">
+                    <button class="next-btn">Next!<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="step step-4">
+                <div class="content-step step-4">
+                    <h1 class="header">What <span>real</span> students say:</h1>
+                    <div class="review-column">
+                        <div class="review">
+                            <div class="top-review">
+                                <div class="review-data">
+                                    <img src="./images/icons/user/juankanor5561.jpg" class="review-icon"
+                                        alt="Juan Kanor">
+                                    <div class="person-data">
+                                        <h2>Juan Kanor</h2>
+                                        <p>Student</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-paragraph">"My brother used the CanvasHack and not only did he go
+                                undetected, he confirmed with his own teacher (shes chill) and went through the canvas
+                                logs and it doesn't show any anything!"</p>
+                        </div>
+                        <div class="review">
+                            <div class="top-review">
+                                <div class="review-data">
+                                    <img src="./images/icons/user/sean.jpg" class="review-icon" alt="Sean">
+                                    <div class="person-data">
+                                        <h2>Sean Blane</h2>
+                                        <p>Student</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-paragraph">"Works so good, and the owner helps out so much and shows you
+                                how it works. 10/10. will pass all of my test now bro!"</p>
+                        </div>
+                        <div class="review">
+                            <div class="top-review">
+                                <div class="review-data">
+                                    <img src="./images/icons/user/finn.webp" class="review-icon" alt="Finnnn2k">
+                                    <div class="person-data">
+                                        <h2>Finnn2k</h2>
+                                        <p>Student</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-paragraph">"I just took the 2 tests on Thursday. No problem at all. Teacher
+                                graded my test without any questions. It's legit."</p>
+                        </div>
+                        <div class="review">
+                            <div class="top-review">
+                                <div class="review-data">
+                                    <img src="./images/icons/user/itscenturion.png" class="review-icon"
+                                        alt="ItsCenturion">
+                                    <div class="person-data">
+                                        <h2>ItsCenturion</h2>
+                                        <p>Student</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-paragraph">"Ive been using the canvas hack for a few months now and its
+                                been working great! used it on a ton of tests since getting it and my teacher hasn't
+                                caught me cheating and switching tabs"</p>
+                        </div>
+                        <div class="review">
+                            <div class="top-review">
+                                <div class="review-data">
+                                    <img src="./images/icons/user/guechue.png" class="review-icon" alt="Gue Chue">
+                                    <div class="person-data">
+                                        <h2>Gue Chue</h2>
+                                        <p>Student</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-paragraph">"WORKS SO WELL, my mothers a teacher and she uses canvas, I
+                                asked her to take a practice "test" in her canvas class before school started and i
+                                cheated on it by leaving tabs & windows and doing other stuff and i asked her to check
+                                the quiz log after and it said NOTHINGGGG, canvas said I was on the test being a perfect
+                                student basically, definitely recommend it if your worried about school this year"</p>
+                        </div>
+                        <div class="review">
+                            <div class="top-review">
+                                <div class="review-data">
+                                    <img src="./images/icons/user/reiko100.jpg" class="review-icon" alt="reiko100">
+                                    <div class="person-data">
+                                        <h2>Reiko100</h2>
+                                        <p>Student</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-paragraph">"I can confirm that this works! The teacher account cant see
+                                anything."</p>
+                        </div>
+                        <div class="review">
+                            <div class="top-review">
+                                <div class="review-data">
+                                    <img src="./images/icons/user/specter.webp" class="review-icon" alt="specter">
+                                    <div class="person-data">
+                                        <h2>Specter</h2>
+                                        <p>Student</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-paragraph">"This is perfect, it saved my a** on a test last thursday
+                                morning. i have NO idea what I would've done without this. such a lifesaver"</p>
+                        </div>
+                        <div class="review">
+                            <div class="top-review">
+                                <div class="review-data">
+                                    <img src="./images/icons/user/buker.webp" class="review-icon" alt="buker">
+                                    <div class="person-data">
+                                        <h2>Buker</h2>
+                                        <p>Student</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-paragraph">"the extension has been carrying me this semester on canvas"</p>
+                        </div>
+                    </div>
+                    <p class="step-4-text">Join 2k+ Happy Users!</p>
+                </div>
+                <i class="fa-regular fa-arrow-down down-review-arrow" id="down-arrow"></i>
+                <div class="bot-but-con">
+                    <button id="finish-btn" class="next-btn">Finish!<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

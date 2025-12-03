@@ -1,0 +1,46 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icons/icon128.png",
+         "16": "icons/icon48.png",
+         "48": "icons/icon48.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "content.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": true,
+      "js": [ "quizanswers.js" ],
+      "matches": [ "*://*.instructure.com/courses/*/quizzes/*/take*", "*://*.edu/courses/*/quizzes/*/take*", "*://*.org/courses/*/quizzes/*/take*", "*://*.instructure.com/courses/*/assignments/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Cheat on quizzes easily, and maintain a low-profile on all Canvas tests.",
+   "externally_connectable": {
+      "matches": [ "https://server.canvashack.com/*" ]
+   },
+   "host_permissions": [ "https://api.canvashack.com/*", "*://*/*" ],
+   "icons": {
+      "128": "icons/ch.png",
+      "16": "icons/ch.png",
+      "48": "icons/ch.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9v7jLDnEIl3mHT1Ywus1wt3naU0Sf6G+ykHHXLvgWMTycyh+RLNQ4iuBKGHk5SbmNdPhS1v+wY9VGEo8saMtnTKx8Ul0goBngiMz0QrtejZn+NP26H2G4hBzDAsTFHyi61UoOk9Lz38D+eKlsYYS/34pb6lKifnjjoM5wfbXr6ebToaOggS2uiQ1beEUsemD1JuoGmvfPihcmaIczSTCm0fYAmW6J/vHRM0TDif6nxN+iMqmL4BreA2w1QLGusrbvHQ6pEdpWVl0QJkdV7+CBi9KL/DOGltYvnG9zm1GePIyOzFm5xd9bTx/JcZkPEofNYaWJBI1w2PEFhUi5XIU2QIDAQAB",
+   "manifest_version": 3,
+   "name": "Canvas Hack",
+   "permissions": [ "activeTab", "scripting", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.8.2",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "quizanswers.js", "content.js", "inject.js", "bar.html", "style.css", "icons/home.png", "icons/reload.png", "images/canvashack-thin.png" ],
+      "use_dynamic_url": true
+   } ]
+}
