@@ -110,6 +110,23 @@ SchoolCheats: https://schoolcheats.net/ https://github.com/schoolcheats https://
 Guath: https://www.gauthmath.com/
 photomath: https://photomath.com/
 Mathway: https://www.mathway.com/
+CANVAS: https://canvashack.com/
+https://github.com/strix/canvas-hack
+or get an extension that will be the ai
+Found a gold mine while scrolling through the reviews of CanvasHack.
+
+https://chromewebstore.google.com/detail/canvas-quiz-loader/pfagnepdndhkmilceinbebdfbmiddagl?hl=en
+https://chromewebstore.google.com/detail/always-active-window-alwa/ehllkhjndgnlokhomdlhgbineffifcbj
+https://github.com/brian-girko/always-active
+These two were mentioned.
+
+The first is Canvas Quiz Loader, it instantly loads the data from your previous attempts. This is great for answering practice quizzes as these data allow you to use "correct" answers from your previous attempts to answer your current one.
+
+The other is Always Active Window, though it was stated by the author of CanvasHack, Blazer, that it does not protect you against the detection system of Canvas LMS. It actually does? I also tested it first with a Teacher demo account along Student account to make sure, got to be skeptical to not get caught.
+
+Joined the discord server a few weeks ago, there were giveaways that required people to review this extension and send a DM to blazer to claim a ticket of some sort. That makes sense why some reviews are closely packed together, such as the recent ones at the moment.
+
+Reviews were still genuine however in the discord server, Blazer seems to be active to say the least. Yes CanvasHack does work but is largely reliant on code from Canvas Quiz Loader, slightly modified so that it loads the answer upon hovering.
 
 Prompts:
 Prompt 1: Write like Hemingway
