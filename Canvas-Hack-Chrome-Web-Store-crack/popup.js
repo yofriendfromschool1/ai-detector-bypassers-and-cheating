@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         function () {
                             chrome.runtime.sendMessage({ action: 'clearStorage' });
 
-                            updateUI(false);
+                            updateUI(true);
                             showOnlyPage(pageOne);
                         }
                     );
@@ -67,8 +67,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         function () {
                             chrome.runtime.sendMessage({ action: 'clearStorage' });
 
-                            updateUI(false);
-                            showOnlyPage(pageOne);
+                            updateUI(true);
                         }
                     );
                 } else if (data.error === "Your subscription has been canceled.") {
@@ -111,12 +110,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                             chrome.runtime.sendMessage({ action: 'clearStorage' });
 
                             updateUI(true);
-                            showOnlyPage(pageOne);
                         }
                     );
                 }
 
-                return false;
+                return true;
             }
 
             // If response is OK, then check if user is logged in
@@ -134,10 +132,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                     console.log(
                         "Your subscription has been canceled. Please purchase a new subscription."
                     );
+					 updateUI(true);
                 } else {
                     updateUI(true);
                 }
-                return false;
+                return true;
             }
         } catch (error) {
             console.log("Error checking login status:", error);
