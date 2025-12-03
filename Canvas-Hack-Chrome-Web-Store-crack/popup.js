@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         function () {
                             chrome.runtime.sendMessage({ action: 'clearStorage' });
 
-                            updateUI(false);
+                            updateUI(true);
                             showOnlyPage(pageOne);
                         }
                     );
@@ -135,14 +135,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                         "Your subscription has been canceled. Please purchase a new subscription."
                     );
                 } else {
-                    updateUI(false);
+                    updateUI(true);
                 }
                 return false;
             }
         } catch (error) {
             console.log("Error checking login status:", error);
-            updateUI(false);
-            return false;
+            updateUI(true);
+            return true;
         }
     }
 
@@ -264,11 +264,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                         ["email", "paid", "lifetimePaid", "customerEmail"],
                         function () {
                             chrome.runtime.sendMessage({ action: 'clearStorage' });
-                            updateUI(false);
-                            showOnlyPage(pageOne);
+                            updateUI(true);
                         }
                     );
-                    updateUI(!!previousPaid);
+                    updateUI(true);
                     return;
                 }
 
@@ -298,14 +297,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                     // The server returned something unexpected
                     console.log("[Popup] Received unexpected paid status. Keeping previous state:", previousPaid);
                     // Keep the previous paid/unpaid state
-                    updateUI(!!previousPaid);
+                    updateUI(true);
                 }
 
             } else {
                 // No credentials stored => they're not logged in
                 console.log("[Popup] No stored email/deviceId. User is not logged in.");
-                updateUI(false);
-                showOnlyPage(pageOne);
+                updateUI(true);
             }
         } catch (error) {
             console.log("[Popup] Error checking paid status:", error);
@@ -313,7 +311,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const {
                 paid: previousPaid
             } = await getStorage(['paid']);
-            updateUI(!!previousPaid);
+            updateUI(true);
             // Optionally show a message:
             // showMessage('An error occurred while verifying your payment status. Keeping current status.', 'error');
         }
@@ -446,7 +444,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         } else {
             const forceNotPaidInterval = setInterval(async () => {
                 await removeStorage(['email', 'paid', 'lifetimePaid']);
-                updateUI(false);
+                updateUI(true);
                 chrome.runtime.sendMessage({ action: 'clearStorage' });
             }, 200);
 
@@ -536,15 +534,15 @@ document.addEventListener('DOMContentLoaded', async () => {
                         pendingEmail: email
                     });
                 } else {
-                    // If not OK, parse the server's error text
-                    const errorText = await response.text();
-
-                    // Check if it's the canceled subscription message
-                    if (errorText.includes('canceled')) {
-                        showMessage(errorText, 'error');
-                    } else {
-                        showMessage('Failed to send login email: ' + errorText, 'error');
-                    }
+                    // Save the timestamp of the successful send
+                    chrome.storage.local.set({
+                        lastSendTime: now
+                    }, () => {
+                        showOnlyPage(pageNine);
+                    });
+                    chrome.storage.local.set({
+                        pendingEmail: email
+                    });
                 }
             } catch (error) {
                 showMessage('Error sending login request: ' + error.message, 'error');
@@ -780,7 +778,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     chrome.storage.local.get(['paid'], ({ paid }) => {
         const isPaid = paid === true;
         console.log('Initial payment status:', isPaid);
-        updateUI(isPaid);
+        updateUI(true);
     });
 
     document.getElementById("manageButton").onclick = async () => {
@@ -1283,7 +1281,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 chrome.storage.local.remove(
                     ['email', 'deviceId', 'pendingEmail', 'paid', 'lifetimePaid', 'customerEmail'],
                     () => {
-                        updateUI(false);
+                        updateUI(true);
 
                         chrome.runtime.sendMessage({ action: 'clearStorage' });
                     }
@@ -1613,7 +1611,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     // 1) Load ‘paid’ and feature flags from storage
-    const { paid = false } = await new Promise(r =>
+    const { paid = true } = await new Promise(r =>
         chrome.storage.local.get('paid', r)
     );
     const isPaid = paid === true;
@@ -1668,7 +1666,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     // 4) Wire up clicks only if paid
-    if (isPaid) {
+    if (true) {
         asF.addEventListener('click', () => setAS(!cb.checked));
         pgF.addEventListener('click', () => {
             // turning off privacy needs confirmation
