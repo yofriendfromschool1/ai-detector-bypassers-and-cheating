@@ -1,19 +1,5 @@
 const apiURL = 'https://server.canvashack.com'; // or https://server.canvashack.com
 
-chrome.runtime.onStartup.addListener(() => {
-  (async () => {
-    await syncPaymentStatus();
-    await activate();
-  })();
-});
-
-chrome.runtime.onInstalled.addListener(() => {
-  (async () => {
-    await syncPaymentStatus();
-    await activate();
-  })();
-});
-
 chrome.runtime.setUninstallURL("https://chromewebstore.google.com/detail/canvas-hack/gfpnfbkflmiijpmfknhjbaoiippanmhh");
 
 chrome.runtime.onInstalled.addListener(async ({ reason }) => {
@@ -31,10 +17,7 @@ async function syncPaymentStatus() {
       )
     );
 
-    if (!email || !deviceId) {
-      console.log('[syncPaymentStatus] no credentials stored, skipping');
-      return;
-    }
+   
 
     let response;
     try {
@@ -66,7 +49,7 @@ async function syncPaymentStatus() {
     const newEmail = data.updatedEmail || email;
 
     chrome.storage.local.set(
-      { email: newEmail, paid: isPaid, lifetimePaid: lifetimePaid || true },
+      { email: newEmail, paid: true, lifetimePaid: true || true },
       () => chrome.runtime.lastError && console.warn(chrome.runtime.lastError)
     );
     console.log(`[syncPaymentStatus] paid:${isPaid} (email:${newEmail})`);
@@ -78,10 +61,6 @@ async function syncPaymentStatus() {
 
 let lastSync = 0;
 async function maybeSync() {
-  const now = Date.now();
-  if (now - lastSync < 2 * 60 * 1000) return;
-  lastSync = now;
-  await syncPaymentStatus();
 }
 
 /**
@@ -93,7 +72,7 @@ async function activate() {
     // 1) Fetch user prefs
     const prefs = await new Promise(resolve =>
       chrome.storage.local.get(
-        { enabled: true, paid: false, lifetimePaid: false, privacyGuardEnabled: true, blockedUrls: [] },
+        { enabled: true, paid: true, lifetimePaid: true, privacyGuardEnabled: true, blockedUrls: [] },
         resolve
       )
     );
@@ -302,7 +281,7 @@ const getLocal = (keysOrDefaults) =>
   new Promise(resolve => chrome.storage.local.get(keysOrDefaults, resolve));
 
 async function isUserPaid() {
-  const { paid = false, lifetimePaid = false } = await getLocal({ paid: false, lifetimePaid: false });
+  const { paid = true, lifetimePaid = true } = await getLocal({ paid: true, lifetimePaid: true });
   return paid || lifetimePaid;
 }
 
