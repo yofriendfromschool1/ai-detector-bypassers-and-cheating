@@ -31,10 +31,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     async function checkLoginStatus(email, deviceId) {
-        /*try {
+    *try {
             const response = await fetch(
                 `${apiURL}/api/check-login?email=${encodeURIComponent(email)}&deviceId=${encodeURIComponent(deviceId)}`
-            );*/
+            );
             const data = await response.json();
 
             if (data.updatedEmail) {
