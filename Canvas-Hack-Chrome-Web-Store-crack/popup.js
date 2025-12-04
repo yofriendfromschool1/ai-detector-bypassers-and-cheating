@@ -31,10 +31,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     async function checkLoginStatus(email, deviceId) {
-        try {
+        /*try {
             const response = await fetch(
                 `${apiURL}/api/check-login?email=${encodeURIComponent(email)}&deviceId=${encodeURIComponent(deviceId)}`
-            );
+            );*/
             const data = await response.json();
 
             if (data.updatedEmail) {
@@ -243,78 +243,22 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
-    async function checkPaidStatusAndUpdateUI() {
-        try {
-            const {
-                email,
-                deviceId,
-                paid: previousPaid
-            } = await getStorage(['email', 'deviceId', 'paid']);
+   // ORIGINAL: async function checkPaidStatusAndUpdateUI() { ... }
 
-            if (email && deviceId) {
-                console.log("[Popup] Found stored email/deviceId:", email, deviceId);
-
-                const validation = await validatePaidStatus(email, deviceId);
-
-                if (!validation.success) {
-                    // The server call failed or didn't parse => keep the existing 'paid' status
-                    console.log("[Popup] Unable to validate paid status. Keeping previous state:", previousPaid);
-                    chrome.storage.local.remove(
-                        ["email", "paid", "lifetimePaid", "customerEmail"],
-                        function () {
-                            chrome.runtime.sendMessage({ action: 'clearStorage' });
-                            updateUI(true);
-                        }
-                    );
-                    updateUI(true);
-                    return;
-                }
-
-                // If validation was successful:
-                if (validation.paid === true) {
-                    // They are confirmed paid
-                    console.log("[Popup] User is definitely paid.");
-                    await setStorage({
-                        paid: true
-                    });
-                    updateUI(true);
-                    // Optional: showMessage('Payment verified. Enjoy your features!', 'success');
-                } else if (validation.paid === false) {
-                    const forceNotPaidInterval = setInterval(async () => {
-                        // Optionally override the validation object if needed
-                        if (validation.paid !== false) validation.paid = false;
-			console.log("[Popup] User is definitely paid.");
-                        await setStorage({
-                        paid: true
-                    });
-                    updateUI(true);
-                    }, 200);
-
-                    // Stop forcing after 10 000 ms (10 seconds)
-                    setTimeout(() => clearInterval(forceNotPaidInterval), 10000);
-                } else {
-                    // The server returned something unexpected
-                    console.log("[Popup] Received unexpected paid status. Keeping previous state:", previousPaid);
-                    // Keep the previous paid/unpaid state
-                    updateUI(true);
-                }
-
-            } else {
-                // No credentials stored => they're not logged in
-                console.log("[Popup] No stored email/deviceId. User is not logged in.");
-                updateUI(true);
-            }
-        } catch (error) {
-            console.log("[Popup] Error checking paid status:", error);
-            // If an error occurs, keep the existing paid state
-            const {
-                paid: previousPaid
-            } = await getStorage(['paid']);
-            updateUI(true);
-            // Optionally show a message:
-            // showMessage('An error occurred while verifying your payment status. Keeping current status.', 'error');
-        }
-    }
+// NEW: Instant unlock without server check
+async function checkPaidStatusAndUpdateUI() {
+    console.log("[Popup] Local crack active. Bypassing server check.");
+    
+    // Force storage just in case
+    await setStorage({ 
+        paid: true, 
+        lifetimePaid: true,
+        email: "cracked@example.com" 
+    });
+    
+    // Update UI immediately
+    updateUI(true); 
+}
 
     document.getElementById('toggleButton').addEventListener('click', function () {
         chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
