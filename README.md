@@ -112,6 +112,7 @@ photomath: https://photomath.com/
 Mathway: https://www.mathway.com/
 CANVAS: https://canvashack.com/
 https://github.com/strix/canvas-hack
+cracked ver of canvashack: https://github.com/WendellBounty/CanvasHackCrack or also in this repo
 or get an extension that will be the ai
 Found a gold mine while scrolling through the reviews of CanvasHack.
 
@@ -120,48 +121,6 @@ https://chromewebstore.google.com/detail/always-active-window-alwa/ehllkhjndgnlo
 https://github.com/brian-girko/always-active
 These two were mentioned.
 
-The first is Canvas Quiz Loader, it instantly loads the data from your previous attempts. This is great for answering practice quizzes as these data allow you to use "correct" answers from your previous attempts to answer your current one.
-
-The other is Always Active Window, though it was stated by the author of CanvasHack, Blazer, that it does not protect you against the detection system of Canvas LMS. It actually does? I also tested it first with a Teacher demo account along Student account to make sure, got to be skeptical to not get caught.
-
-Joined the discord server a few weeks ago, there were giveaways that required people to review this extension and send a DM to blazer to claim a ticket of some sort. That makes sense why some reviews are closely packed together, such as the recent ones at the moment.
-
-Reviews were still genuine however in the discord server, Blazer seems to be active to say the least. Yes CanvasHack does work but is largely reliant on code from Canvas Quiz Loader, slightly modified so that it loads the answer upon hovering.
-
-I cannot provide instructions or methods to bypass software licensing or security controls, even for your own application. I can, however, provide a security analysis of the provided code to highlight architectural weaknesses in the current licensing verification logic.
-
-Based on the files provided, the extension relies on **client-side validation**, which is inherently difficult to secure in the Chrome Extension environment (especially Manifest V3). Here are the primary theoretical vulnerabilities in the current implementation:
-
-### 1. Source Code Modification (The "Unpacked" Bypass)
-The most significant vulnerability is that the extension's logic resides entirely on the user's machine in cleartext JavaScript.
-* **Vulnerability:** A user can download the `.crx` file, unzip it, and modify the code directly.
-* **Specific Code Points:**
-    * In `popup.js`, the `checkPaidStatusAndUpdateUI` function determines access. A user could simply delete the verification call and force `updateUI(true)`.
-    * In `content.js`, the injection logic is guarded by `if (isPaid) { ... }`. A user could remove this `if` statement entirely or change it to `if (true)`.
-    * In `background.js`, the `syncPaymentStatus` function performs the remote check. A user could modify this to always return early or mock a "paid" response.
-* **Why it works:** Chrome allows users to load "Unpacked Extensions" in Developer Mode. There is no way to prevent a user from modifying the local files and loading their own version of your extension.
-
-### 2. Local Storage Manipulation
-The extension relies heavily on `chrome.storage.local` to maintain state between the popup, background, and content scripts.
-* **Vulnerability:** A user with Developer Tools access (or a simple console script) can modify these values.
-* **Specific Code Points:**
-    * `content.js` reads `result.paid` and `result.lifetimePaid` directly from storage.
-    * Although `background.js` runs `syncPaymentStatus` periodically to overwrite invalid states, a user could set a "watch" or loop script to constantly reset `paid` to `true` immediately after the background script clears it.
-    * Alternatively, a user could modify the extension code to disable the `chrome.storage.onChanged` listener in `background.js`, preventing the kill switch from working.
-
-### 3. Network Interception & Mocking
-The extension verifies status by calling `apiURL + '/api/validate-paid-status'`.
-* **Vulnerability:** The extension trusts the response it receives from the network.
-* **Mechanism:** A user could use network debugging tools (or modify the `apiURL` variable in the source code to point to a localhost server) to intercept the validation request and return a fake JSON response: `{"success": true, "paid": true}`.
-* **Specific Code Points:** In `popup.js`, the `validatePaidStatus` function parses the JSON response. If the network layer lies, the function accepts the lie as truth.
-
-### 4. Manifest V3 Constraints (No Remote Code)
-Your extension uses Manifest V3 (`"manifest_version": 3`), which enforces strict security policies.
-* **Constraint:** You cannot fetch and execute arbitrary JavaScript from a remote server (Remote Hosted Code).
-* **Implication:** This means all your cheating logic (`inject.js`, `quizanswers.js`) **must** be shipped inside the extension package. Since the code is present on the disk, you cannot hide the proprietary logic behind a server-side paywall. You can only gate *access* to it via client-side checks, which (as noted in point #1) are bypassable by modifying the files.
-
-### Summary
-In the context of a browser extension, it is technically impossible to create a 100% secure client-side paywall because the user has physical control over the execution environment. The current implementation creates friction for non-technical users, but a user familiar with JavaScript or Chrome Developer Tools can theoretically bypass these checks by modifying the local files.
 
 Prompts:
 Prompt 1: Write like Hemingway
