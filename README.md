@@ -120,7 +120,7 @@ https://chromewebstore.google.com/detail/canvas-quiz-loader/pfagnepdndhkmilceinb
 https://chromewebstore.google.com/detail/always-active-window-alwa/ehllkhjndgnlokhomdlhgbineffifcbj
 https://github.com/brian-girko/always-active
 These two were mentioned.
-
+btw i think mcgrawhill do the same thing so: https://github.com/brian-girko/always-active and https://github.com/nrkorte/McGraw-Bot
 
 Prompts:
 Prompt 1: Write like Hemingway
